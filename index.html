@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Agro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="menu-acessibilidade">
+        <button onclick="mudarFonte(1)" title="Aumentar Letra">A+</button>
+        <button onclick="mudarFonte(-1)" title="Diminuir Letra">A-</button>
+        <button onclick="mudarIdioma()" id="btn-idioma" title="Mudar Idioma">PT / EN</button>
+    </div>
+
+    <div class="bg-banner">
+        <h1 class="texto-central" id="titulo-principal">Conectando Campo e Futuro</h1>
+    </div>
+
+    <main class="container-noticias">
+        <h2 class="titulo-secao" id="titulo-noticias">Iniciativas Verdes</h2>
+        
+        <div class="grid-noticias">
+            <a href="https://g1.globo.com/economia/agronegocios/" target="_blank" class="card-noticia">
+                <div class="conteudo-card">
+                    <span class="tag-agro">Energia</span>
+                    <h3 class="txt-n1-titulo">Energia Solar Cresce nas Fazendas</h3>
+                    <p class="txt-n1-desc">Produtores rurais estão instalando painéis solares para gerar energia limpa, reduzindo os custos e a pegada de carbono da produção.</p>
+                    <span class="leia-mais">Leia mais →</span>
+                </div>
+            </a>
+
+            <a href="https://g1.globo.com/economia/agronegocios/" target="_blank" class="card-noticia">
+                <div class="conteudo-card">
+                    <span class="tag-agro">Orgânicos</span>
+                    <h3 class="txt-n2-titulo">O Boom dos Alimentos Orgânicos</h3>
+                    <p class="txt-n2-desc">A busca por alimentos cultivados sem produtos químicos artificiais bate recordes, valorizando a saúde do solo e dos consumidores.</p>
+                    <span class="leia-mais">Leia mais →</span>
+                </div>
+            </a>
+
+            <a href="https://g1.globo.com/economia/agronegocios/" target="_blank" class="card-noticia">
+                <div class="conteudo-card">
+                    <span class="tag-agro">Água</span>
+                    <h3 class="txt-n3-titulo">Proteção de Nascentes no Campo</h3>
+                    <p class="txt-n3-desc">Projetos de reflorestamento ao redor de rios e nascentes garantem água limpa e farta para as futuras gerações da agricultura.</p>
+                    <span class="leia-mais">Leia mais →</span>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <section class="secao-quiz">
+        <div class="container-quiz">
+            <h2 class="titulo-secao-quiz" id="tit-quiz">Eco Desafio</h2>
+            <p class="subtitulo-quiz" id="sub-quiz">Descubra se você é um amigo do campo!</p>
+            
+            <div class="caixa-quiz">
+                <div class="pergunta-bloco">
+                    <p class="enunciado" id="p1-enun">1. O que é adubação verde?</p>
+                    <div class="opcoes">
+                        <button onclick="verificarResposta(this, false)" class="btn-opcao">A) Pintar as plantas com tinta ecológica</button>
+                        <button onclick="verificarResposta(this, true)" class="btn-opcao">B) Usar plantas específicas para enriquecer o solo</button>
+                        <button onclick="verificarResposta(this, false)" class="btn-opcao">C) Usar fertilizantes químicos industriais</button>
+                    </div>
+                </div>
+
+                <div class="pergunta-bloco">
+                    <p class="enunciado" id="p2-enun">2. Qual o destino correto das embalagens de defensivos?</p>
+                    <div class="opcoes">
+                        <button onclick="verificarResposta(this, false)" class="btn-opcao">A) Descartar perto de rios</button>
+                        <button onclick="verificarResposta(this, false)" class="btn-opcao">B) Queimar no fundo da fazenda</button>
+                        <button onclick="verificarResposta(this, true)" class="btn-opcao">C) Lavar (tríplice lavagem) e devolver nos postos de coleta</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <p>© 2026 Concurso Agrinho - Versão Eco Campo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
