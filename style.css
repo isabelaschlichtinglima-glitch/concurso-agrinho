@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 100%; 
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fafafa; /* Fundo ainda mais limpo */
+    color: #333;
+    transition: font-size 0.2s ease;
+}
+
+/* Menu de Acessibilidade */
+.menu-acessibilidade {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-acessibilidade button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.menu-acessibilidade button:hover {
+    background-color: #1b5e20;
+}
+
+/* Banner com a nova imagem */
+.bg-banner {
+    /* Lembre-se de subir uma foto com o nome exato 'fazenda.jpg' */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fazenda.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TEXTO CENTRAL EM TOM DOURADO/CREME */
+.texto-central {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff9c4; /* Nova cor: Creme iluminado */
+    text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 0 20px;
+    margin: 0;
+}
+
+/* Seção de Notícias */
+.container-noticias {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.titulo-secao {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.2em;
+    color: #1b5e20;
+    margin-bottom: 40px;
+}
+
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card-noticia {
+    background-color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+}
+
+.card-noticia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(27, 94, 32, 0.15);
+}
+
+.conteudo-card {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.tag-agro {
+    background-color: #efebe9; /* Tag em tom marrom terra suave */
+    color: #5d4037;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: flex-start;
+}
+
+.conteudo-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin: 15px 0 10px 0;
+    color: #2e7d32;
+}
+
+.conteudo-card p {
+    font-size: 0.95em;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.leia-mais {
+    color: #1b5e20;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+/* Estilos do Quiz */
+.secao-quiz {
+    background-color: #f1f8e9;
+    padding: 60px 20px;
+}
+
+.container-quiz {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titulo-secao-quiz {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2.2em;
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+.subtitulo-quiz {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.caixa-quiz {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.pergunta-bloco {
+    margin-bottom: 30px;
+}
+
+.enunciado {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-opcao {
+    background-color: #f4f6f4;
+    border: 2px solid #e0e0e0;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.btn-opcao:hover {
+    background-color: #dcedc8;
+    border-color: #abcb78;
+}
+
+.correta {
+    background-color: #c5e1a5 !important;
+    border-color: #7cb342 !important;
+    color: #33691e;
+    font-weight: bold;
+}
+
+.errada {
+    background-color: #ffcdd2 !important;
+    border-color: #e57373 !important;
+    color: #b71c1c;
+}
+
+.rodape {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
